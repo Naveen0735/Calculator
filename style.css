@@ -1,0 +1,154 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@700&family=Poppins&display=swap');
+*{
+  color: white;
+  font-family: 'Roboto Mono', monospace;
+}
+body{
+  height: 200vh;
+}
+body::-webkit-scrollbar{
+  background-color: violet;
+  border-radius: 20px;
+}
+body::-webkit-scrollbar-thumb{
+  background-color: black;
+  border-radius: 10px;
+  width: 50%;
+}
+
+.main-title{
+  font-family: 'Bebas Neue', cursive;
+  margin-top: 20px;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.Calculator-div {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.Calculator{
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  border-radius: 10px;
+  padding: 22px 0px 27px;
+  background-color: rgb(238, 155, 155);
+}
+body{
+  background-color: #1a1a1a;
+  margin: 0;
+  padding: 0;
+}
+
+#display{
+  width: 240px;
+  color: rgb(68, 68, 68);
+  background-color: white;
+  text-align: start;
+  padding: 25px 10px 5px;
+  border-radius: 5px;
+  border: none;
+  font-size: 25px;
+  font-family: Handjet;
+  font-weight: bold;
+  min-height: 30px;
+  /* max-height: 30px;
+  overflow: hidden; */
+}
+::selection{
+  background-color: red;
+  color: rgb(0, 0, 0);
+}
+
+
+
+.buttons{
+  display: flex;
+  column-gap: 20px;
+  margin-top: 5px;
+}
+
+.buttons-fun {
+  display: flex;
+  margin-top: 10px;
+  justify-content: space-between;
+}
+.clear{
+  width: 60%;
+}
+.delete {
+  width: 30%;
+}
+
+.buttonContainer{
+  background: #8990ec;
+  display: grid;
+  border-radius: 50%;
+}
+
+button{
+color: #f9f9f9;
+margin-bottom: 5px;
+text-align: center;
+font-size: 23px;
+min-width: 45px;
+background-color: rgb(0, 0, 0);
+border: none;
+border-radius: 5px;
+padding-top: 7px;
+padding-bottom: 7px;
+transition: all 0.5s ease;
+font-family: Bebas Neue ;
+}
+button:hover  {
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+}
+button:active {
+  box-shadow: none;
+}
+
+
+
+.marquee-wrapper{
+  margin-top: 55px;
+  margin-left: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+  background: #8990ec;
+  height: 30px;
+  width:100%;
+  cursor: default;
+}
+.marquee-wrapper h2{
+  font-family: 'Bebas Neue', cursive;
+  font-size: 27px;
+  white-space: nowrap;
+  padding: 5px 10px 5px ;
+  letter-spacing: 1.5px;
+  animation: move-rtl 3000ms linear infinite forwards ;
+  cursor: default;
+}
+
+@keyframes move-rtl{
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(-100%);
+  }
+}
